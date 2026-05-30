@@ -7,6 +7,7 @@ This repository contains the implementation of an RPG system modeling focused on
 
 **Composition:** Established in the direct relationship between the `Guerreiro` and `Coracao` classes. This business rule defines that the heart is born with the warrior. Consequently, if the warrior ceases to exist in the game, their heart is also destroyed.
 **Aggregation and Interfaces:** To make the system extremely flexible, the relationship between the warrior and their equipment was transformed into an aggregation. The `Guerreiro` has a list of the `IItemEquipavel` type. 
+
 **Polymorphism:** Interfaces are excellent for working alongside Aggregation, as they allow the Warrior to change or equip any type of item that follows the interface's rules, not just weapons. This means they can equip instances of `Arma` (Weapon), `Escudo` (Shield), or anything else created in the future.
 
 ## 📋 Tasks and Implemented Features
